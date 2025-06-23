@@ -4,18 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Freelance Web Developer | SabirWebTop</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="main-header">
-    <div class="container nav-container">
+    <div class="nav-container">
       <h1 class="logo">SabirWebTop</h1>
 
-      <!-- Botón menú hamburguesa -->
+      <!-- Botón hamburguesa -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="fas fa-bars" id="menu-icon"></i>
       </div>
@@ -29,43 +31,36 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <h1>Hi, I’m <span>Sabir</span>, a Freelance Web Developer</h1>
-      <p>I build fast, responsive and beautiful websites.</p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container about-container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I’m passionate about crafting clean and modern websites using HTML, CSS and JavaScript. I focus on building fully responsive and engaging user experiences tailored to client needs.</p>
-        <p>I enjoy turning ideas into real digital experiences. Let’s build something amazing together!</p>
-      </div>
-      <div class="about-img">
-        <img src="/img/photo-1605379399642-870262d3d051.jpeg" alt="About image">
-      </div>
-    </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Hi, I’m Sabir, a Freelance Web Developer</h1>
+    <p>I build fast, responsive and beautiful websites.</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </section>
 
-  <!-- SERVICES -->
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m passionate about crafting clean and modern websites using HTML, CSS and JavaScript.</p>
+    <p>I enjoy turning ideas into real digital experiences. Let’s build something amazing together!</p>
+    <img src="img/about.jpg" alt="About Me" style="max-width: 100%; border-radius: 12px; margin-top: 20px;" />
+  </section>
+
+  <!-- SERVICES SECTION -->
   <section id="services">
-    <div class="service-grid container">
-      <div class="service-card">
+    <h2>What I Offer</h2>
+    <div class="features">
+      <div class="feature">
         <i class="fas fa-mobile-alt"></i>
         <h3>Responsive Design</h3>
         <p>Websites that look great on all devices.</p>
       </div>
-      <div class="service-card">
+      <div class="feature">
         <i class="fas fa-bolt"></i>
         <h3>Fast Performance</h3>
         <p>Optimized code for faster loading speeds.</p>
       </div>
-      <div class="service-card">
+      <div class="feature">
         <i class="fas fa-code"></i>
         <h3>Modern Code</h3>
         <p>Clean HTML, CSS and JavaScript.</p>
@@ -73,70 +68,26 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio" style="padding: 50px 0; background-color: #f7f7f7;">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="work-container">
-
-      <div class="project-card">
-        <span class="badge badge-html">HTML</span>
-        <img src="/img/177C2FC5-AA2F-4CFD-8923-8E229D5B1497.png" alt="Landing Page">
-        <h3>Landing Page</h3>
-        <p>Clean and responsive landing page built with HTML and CSS.</p>
-        <a href="#" class="btn-demo available">View Demo</a>
-      </div>
-
-      <div class="project-card">
-        <span class="badge badge-portfolio">Portfolio</span>
-        <img src="/img/76DEC88B-C10A-4FBA-A58B-78C452DD55C3.png" alt="Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>Personal website with interactive layout and custom UI.</p>
-        <a href="#" class="btn-demo soon">Coming Soon</a>
-      </div>
-
-      <div class="project-card">
-        <span class="badge badge-js">JavaScript</span>
-        <img src="/img/68CC02A0-1E81-4D74-9F8E-F49EF87C04F0.png" alt="Business Site">
-        <h3>Business Site</h3>
-        <p>Multi-section site for small businesses using JavaScript.</p>
-        <a href="#" class="btn-demo soon">Coming Soon</a>
-      </div>
-
-    </div>
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Coming soon...</p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Let’s Work Together</h2>
-      <form action="https://formspree.io/f/your-code" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach out via Fiverr or the contact form coming soon.</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>© 2025 SabirWebTop. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- SCRIPT -->
+  <!-- JavaScript para el menú -->
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    const menuIcon = document.getElementById('menu-icon');
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('nav-links');
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      menuIcon.classList.toggle('fa-bars');
-      menuIcon.classList.toggle('fa-times');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
     });
   </script>
-
 </body>
 </html>
