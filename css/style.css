@@ -20,50 +20,48 @@ body {
   padding: 40px 20px;
 }
 
-/* ==========================
-   HEADER
-========================== */
+/* ===============================
+   HEADER / NAVIGATION (MEJORADO)
+================================ */
 .main-header {
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-}
-
-#menu-toggle {
-  margin-left: auto;
-  order: 2;
+  justify-content: space-between;
 }
 
 .logo {
-  font-size: 1.6rem;
-  color: #1f2a40;
+  font-size: 24px;
   font-weight: 700;
+  color: #1f2a40;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 30px;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #1f2a40;
+.nav-links a {
   font-weight: 500;
-  transition: color 0.3s ease;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #00a8cc;
+.nav-links a:hover {
+  background-color: #1f6feb;
+  color: white;
 }
 
 /* ==========================
